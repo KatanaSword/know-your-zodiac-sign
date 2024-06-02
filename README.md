@@ -1,16 +1,16 @@
-# Do You Know?
+# Know Your Zodiac Sign
 
-Welcome to Do You Know?, an interactive CLI program that provides a variety of fascinating facts across different topics including Science, History, Culture, and Social aspects.
+Welcome to the Know Your Zodiac Sign application, a simple and interactive CLI program that helps you discover your zodiac sign based on your date of birth.
 
 ## Features
 
-- Welcome Message: A friendly welcome message when the program starts.
+- Greeting: A friendly welcome message when the program starts.
 
-- User Input: Prompts the user to enter their name and choose a topic of interest.
+- User Input: Prompts the user to enter their name and date of birth.
 
-- Fact Display: Provides a random fact from the selected topic.
+- Zodiac Sign Determination: Determines and displays the user's zodiac sign along with its element, quality, and ruler.
 
-- Interactive Navigation: Users can choose to change the topic, get another fact from the same topic, or exit the program.
+- Interactive Navigation: Users can choose to enter another date of birth or exit the program.
 
 ## Requirements
 
@@ -27,8 +27,8 @@ Welcome to Do You Know?, an interactive CLI program that provides a variety of f
 1. **Clone the repository:**
 
    ```
-   git clone https://github.com/KatanaSword/do-you-know.git
-   cd do-you-know
+   git clone https://github.com/KatanaSword/know-your-zodiac-sign.git
+   cd know-your-zodiac-sign
    ```
 
 2. **Install the dependencies:**
@@ -57,25 +57,27 @@ Welcome to Do You Know?, an interactive CLI program that provides a variety of f
 
 - If the entered name is invalid (empty or not a string), prompts the user to enter again.
 
-- Greets the user by name and moves to topic selection.
+- Greets the user by name and moves to the date of birth input.
 
-3. **Topic Selection:**
+3. **Date of Birth Input:**
 
-- Displays available topics: Science, History, Culture, and Social.
+- Prompts the user to enter their date of birth in the format [dd/mm].
 
-- Prompts the user to select a topic by entering a specific key (s for Science, h for History, c for Culture, ss for Social).
+- Validates the date of birth input and prompts again if invalid.
 
-4. **Display Fact:**
+- Moves to zodiac sign determination if the date is valid.
 
-- Shows a random fact from the selected topic.
+4. **Zodiac Sign Determination:**
 
-- Asks the user if they want to change the topic, get another fact, or exit.
+- Matches the user's date of birth with the corresponding zodiac sign.
+
+- Displays the user's zodiac sign, its element, quality, and ruler.
+
+- Prompts the user to continue or exit.
 
 5. **Interactive Options:**
 
-- Change topic (x): Goes back to topic selection.
-
-- Continue (y): Displays another fact from the current topic.
+- Continue (y): Prompts for another date of birth.
 
 - Exit (n): Exits the program.
 
@@ -86,22 +88,22 @@ Welcome to Do You Know?, an interactive CLI program that provides a variety of f
 ## Example
 
 ```
-🌟 Welcome to 'Do You Know?'🌟
-Unlock a world of fascinating facts! Ready for a journey of discovery?
-Please enter your name: John
-Hello!, John Let's get started!
-Select topic
-Science History Culture Social
-Press key: Science: s History: h Culture: c Social: ss
-Please enter your topic: s
-Did you know?
-The speed of light is approximately 299,792 kilometers per second.
-Do you want to change topic or continue or exit [x/y/n]: y
-Did you know?
-The Earth's core is as hot as the surface of the sun.
-Do you want to change topic or continue or exit [x/y/n]: n
-👋 Thank you for exploring 'Do You Know?'
-!Feel free to return anytime for more fascinating facts. Happy learning!
+Hello!, Welcome to the 'Know Your Zodiac Sign'
+Please enter your name: Alice
+Welcome Alice, Let's know your zodiac sign
+Please enter your date of birth [dd/mm]: 15/04
+Sign: Aries
+Element: Fire
+Quality: Cardinal
+Ruler: Mars
+Do you want to continue [y/n]: y
+Please enter your date of birth [dd/mm]: 23/07
+Sign: Leo
+Element: Fire
+Quality: Fixed
+Ruler: Sun
+Do you want to continue [y/n]: n
+Thank you for using the Know Your Zodiac Sign app. Goodbye!
 ```
 
 ## License
